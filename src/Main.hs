@@ -33,7 +33,7 @@ hello = do
     []     -> return ()
   file <- WX.menuPane [WX.text := "&File"]
   _ <- WX.menuItem file
-    [ WX.text := "&Open\tCtrl+O"
+    [ WX.text := "&Open…\tCtrl+O"
     , on WX.command := do
         mfp <- WX.fileOpenDialog frame
           True -- rememberCurrentDir
