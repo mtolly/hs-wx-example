@@ -8,8 +8,8 @@ cabal-version:        >= 1.10
 executable wxtest
   main-is:              Main.hs
   build-depends:
-    base >= 4.7 && < 4.8
-    , wx >= 0.91 && < 0.92
+    base
+    , wx
     , wxcore
     , yaml
   hs-source-dirs:       src
