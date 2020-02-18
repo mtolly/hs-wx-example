@@ -1,10 +1,12 @@
 flags: {}
 packages:
 - '.'
-extra-deps:
-- wx-0.92.2.0
-- wxcore-0.92.2.0
-- wxc-0.92.2.0
-- wxdirect-0.92.2.0
-resolver: lts-7.5
-allow-newer: true # needed because `wxdirect` wants an older `process`
+- location: '../wxHaskell/wx'
+  extra-dep: true
+- location: '../wxHaskell/wxcore'
+  extra-dep: true
+- location: '../wxHaskell/wxc'
+  extra-dep: true
+- location: '../wxHaskell/wxdirect'
+  extra-dep: true
+resolver: nightly-2018-06-21
